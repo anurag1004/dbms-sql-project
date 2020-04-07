@@ -13,7 +13,7 @@ module.exports = (sequelize, type)=>{
         },
         checkout:{
             type:type.DATE,
-            allowNull:true
+            defaultValue: new Date()
         },
         bookstatus: {
             type:type.BOOLEAN,
@@ -30,6 +30,14 @@ module.exports = (sequelize, type)=>{
         roomId:{
             type: type.INTEGER,
             allowNull: false
+        },
+        createdAt: {
+            type:type.DATE,
+            defaultValue: new Date()
+        },
+        updatedAt: {
+            type:type.DATE,
+            defaultValue: new Date()
         }
     },
         {

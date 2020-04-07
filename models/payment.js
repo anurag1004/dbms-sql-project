@@ -29,6 +29,14 @@ module.exports = (sequelize, type)=>{
             type: type.BOOLEAN,
             allowNull:false,
             defaultValue: false
+        },
+        createdAt: {
+            type:type.DATE,
+            defaultValue: new Date()
+        },
+        updatedAt: {
+            type:type.DATE,
+            defaultValue: new Date()
         }
      }
     )

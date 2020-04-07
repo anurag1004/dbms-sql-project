@@ -26,6 +26,14 @@ module.exports = (sequelize, type)=>{
         itemId:{
             type:type.INTEGER,
             allowNull:false
+        },
+        createdAt: {
+            type:type.DATE,
+            defaultValue: new Date()
+        },
+        updatedAt: {
+            type:type.DATE,
+            defaultValue: new Date()
         }
      }
     )
