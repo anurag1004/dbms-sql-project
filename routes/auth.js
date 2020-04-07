@@ -37,7 +37,7 @@ router.post('/login',(req, res)=>{
             .then(passwordMatch=>{
                 if(passwordMatch){
                     //login success
-                    const JWT = create_token(user.username,"60000");
+                    const JWT = create_token(user.username,"100000");
                     console.log("login success");
                     res.cookie("jwt", JWT, {expire: 60000 + Date.now(),httpOnly: true,sameSite:true});
                     //managing session using express session, just using to check login status
@@ -85,10 +85,10 @@ router.post('/register',(req, res)=>{
                     }
                     User.create(newUser).then(user => {
                         console.log("user's auto-generated ID:", user.id);
-                        res.send(user);           
+                        res.redirect('/login')           
                     }).catch(err=>{
                         console.log(err)
-                        res.send({'err': 'Same username found!!'});
+                        res.send('/login')
                     });
                 }
             })

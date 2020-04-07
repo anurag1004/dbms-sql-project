@@ -54,7 +54,7 @@ app.disable('x-powered-by');
 
 //REST APIs
 app.get('/',(req, res)=>{
-    res.render('landing'); 
+    res.redirect('/login')
 });
 
 
@@ -64,6 +64,9 @@ app.use('/user',validate_token,customerRoutes);
 app.listen(process.env.PORT,(req, res)=>{
     console.log(`Server started at http://localhost:${process.env.PORT}`);
 });
+app.get("*",(req, res)=>{
+    res.redirect('/')
+})
 //middleware
 function validate_token(req, res, next){
     const client_token = req.cookies.jwt;
