@@ -14,7 +14,7 @@ router.get('/login',(req, res)=>{
     console.log("Session Active ID "+req.session.user_id);
     if(req.session.status){
        
-        res.redirect('/');
+        res.redirect('/user');
     }
     else{
         
@@ -57,7 +57,7 @@ router.post('/login',(req, res)=>{
     });
 });
 router.get('/register',(req, res)=>{
-    if(req.session.status) res.redirect('/');
+    if(req.session.status) res.redirect('/user');
     else
     res.render("register");
 });
