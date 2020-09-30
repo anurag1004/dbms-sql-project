@@ -1,6 +1,6 @@
 ## HOTEL_MANAGEMENT DBMS PROJECT
 
-#### How to run?
+#### Steps to run!
 
 > git clone https://github.com/anurag0608/dbms-sql-project.git <br />
 > npm i <br />
@@ -11,8 +11,8 @@
 > mysql -u root -l  <br />
 > source .../models/seed/main.sql
 
-### SCREENSHOTS
+### Sample Images
 -  LOGIN PAGE
-![ScreenShot 1](https://github.com/anurag0608/dbms-sql-project/blob/master/ss/1.png)
+![Image 1](https://github.com/anurag0608/dbms-sql-project/blob/master/ss/1.png)
 -  QUERY EXCUTION PAGE
-![ScreenShot 1](https://github.com/anurag0608/dbms-sql-project/blob/master/ss/2.png)
+![Image 2](https://github.com/anurag0608/dbms-sql-project/blob/master/ss/2.png)
