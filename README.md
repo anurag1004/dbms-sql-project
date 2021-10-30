@@ -1,6 +1,6 @@
 ## HOTEL_MANAGEMENT DBMS PROJECT
 
-#### Steps to run!
+#### Steps to run!!!
 
 > git clone https://github.com/anurag0608/dbms-sql-project.git <br />
 > npm i <br />
