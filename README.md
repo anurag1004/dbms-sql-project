@@ -18,3 +18,4 @@ A simple Hotel Management Database Project as an academic project work.
 ![Image 1](https://github.com/anurag0608/dbms-sql-project/blob/master/ss/1.png)
 -  QUERY EXCUTION PAGE
 ![Image 2](https://github.com/anurag0608/dbms-sql-project/blob/master/ss/2.png)
+
