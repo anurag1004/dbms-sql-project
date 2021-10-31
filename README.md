@@ -1,5 +1,7 @@
 ## HOTEL_MANAGEMENT DBMS PROJECT
 
+A simple Hotel Management Database Project as an academic project work.
+
 #### Steps to run!!!
 
 > git clone https://github.com/anurag0608/dbms-sql-project.git <br />
